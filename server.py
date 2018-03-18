@@ -12,7 +12,7 @@ def count():
 def double():
     num=0
     session['num']+=2
-    return redirect('/')
+    return render_template('index.html',number=session['num'])
 
 @app.route('/reset')
 def reset():

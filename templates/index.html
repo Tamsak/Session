@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Counter</title>
+    </head>
+    <body>
+            <h1>{{session['num']}}</h1>
+            <form action='/plus2'>
+                <input type='hidden' name='number'>
+                <input type='submit' value="+2">
+            </form>
+            <form action='/reset'>
+                <input type='hidden' name='reset'>
+                <input type='submit' value='reset'>
+            </form>
+    </body>
+</html>
